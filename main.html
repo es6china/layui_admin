@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+		<title>后台主页</title>
+		<link rel="stylesheet" type="text/css" href="js/full/fullcalendar.css"/>
+		<link rel="stylesheet" type="text/css" href="js/full/fullcalendar.print.css"/>
+		<link rel="stylesheet" type="text/css" href="layui/css/layui.css"/>
+		<link rel="stylesheet" type="text/css" href="layui/css/style.css"/>
+	</head>
+
+	<body>
+		<div class="index_main">
+			<div class="main_top">
+				<div class="main_toplist">
+					<div class="dashboard-stat blue">
+	                    <div class="visual">
+	                        <i class="iconfont">&#xe701;</i>
+	                    </div>
+	                    <div class="details">
+	                        <div class="number"> <?php echo "$num_rowsone";?> </div>
+	                        <div class="desc"> 这是百度 </div>
+	                    </div>
+						<a class='more' href='javascript:;' onclick="top.addTab('这是百度','https://www.baidu.com','010100')">查看更多<i class='iconfont'>&#xe624;</i></a>
+	                </div>
+				</div>
+				<div class="main_toplist">
+					<div class="dashboard-stat red">
+	                    <div class="visual">
+	                        <i class="iconfont">&#xe700;</i>
+	                    </div>
+	                    <div class="details">
+	                        <div class="number"> <?php echo "$num_rowstwo";?> </div>
+	                        <div class="desc"> 这是百度 </div>
+	                    </div>
+						<a class='more' href='javascript:;' onclick="top.addTab('这是百度','https://www.baidu.com','010200')">查看更多<i class='iconfont'>&#xe624;</i></a></div>
+				</div>
+				<div class="main_toplist">
+					<div class="dashboard-stat green">
+	                    <div class="visual">
+	                        <i class="iconfont">&#xe61a;</i>
+	                    </div>
+	                    <div class="details">
+	                        <div class="number"> <?php echo "$num_orderone";?> </div>
+	                        <div class="desc"> 这是百度 </div>
+	                    </div>
+	                   <a class='more' href='javascript:;' onclick="top.addTab('这是百度','https://www.baidu.com','010300')">查看更多<i class='iconfont'>&#xe624;</i></a>
+	                </div>
+				</div>
+				<div class="main_toplist">
+					<div class="dashboard-stat purple">
+	                    <div class="visual">
+	                        <i class="iconfont">&#xe61b;</i>
+	                    </div>
+	                    <div class="details">
+	                        <div class="number"> <?php echo "$num_ordertwo";?> </div>
+	                        <div class="desc"> 这是百度 </div>
+	                    </div>
+	                    <a class='more' href='javascript:;' onclick="top.addTab('这是百度','https://www.baidu.com','010300')">查看更多<i class='iconfont'>&#xe624;</i></a>
+	                </div>
+				</div>
+				
+			</div>
+			
+			<div id="" class="" style="width: 100%;">
+				<div class="orderlist_main">
+					<blockquote class="layui-elem-quote">
+						什么都没有
+					</blockquote>
+				</div>
+			</div>
+		</div>
+		
+
+		<script src="js/jquery-1.8.2.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="layui/layui.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			/**
+			 * 对layui进行全局配置
+			 */
+			layui.config({
+				base: 'js/'
+			});
+			
+			
+			layui.use(['form'], function(){
+			  var form = layui.form(),layer = layui.layer
+			});
+		</script>
+
+	</body>
+
+</html>
